@@ -34,6 +34,8 @@ s2-geometry = "1.0.0"
 spatial4j = "0.8"
 xerces = "2.12.0"
 zstd = "1.5.5-11"
+s3 = "2.31.77"
+awssdk-core = "2.31.77"
 
 [libraries]
 antlr-core = { module = "org.antlr:antlr4", version.ref = "antlr" }
@@ -72,6 +74,8 @@ s2-geometry = { module = "io.sgr:s2-geometry-library-java", version.ref = "s2-ge
 spatial4j = { module = "org.locationtech.spatial4j:spatial4j", version.ref = "spatial4j" }
 xerces = { module = "xerces:xercesImpl", version.ref = "xerces" }
 zstd = { module = "com.github.luben:zstd-jni", version.ref = "zstd" }
+s3 = { module = "software.amazon.awssdk:s3", version.ref = "s3" }
+awssdk-core = { module = "software.amazon.awssdk:core", version.ref = "awssdk-core" }
 
 [plugins]
 benmanes-versions = "com.github.ben-manes.versions:0.51.0"

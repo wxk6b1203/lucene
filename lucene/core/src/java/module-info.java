@@ -16,10 +16,14 @@
  */
 
 /** Lucene Core. */
-@SuppressWarnings("module") // the test framework is compiled after the core...
+@SuppressWarnings({"requires-automatic", "module"})
 module org.apache.lucene.core {
   requires java.logging;
-  requires static jdk.management; // this is optional but explicit declaration is recommended
+  requires static jdk.management;
+  requires software.amazon.awssdk.services.s3;
+  requires software.amazon.awssdk.regions;
+  requires software.amazon.awssdk.auth;
+  requires software.amazon.awssdk.core;
 
   exports org.apache.lucene.analysis.standard;
   exports org.apache.lucene.analysis.tokenattributes;

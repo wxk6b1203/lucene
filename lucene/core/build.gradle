@@ -22,4 +22,7 @@ description = 'Lucene core library'
 dependencies {
   moduleTestImplementation project(':lucene:codecs')
   moduleTestImplementation project(':lucene:test-framework')
+
+  moduleImplementation deps.s3
+  moduleImplementation deps.awssdk.core
 }
